@@ -1,0 +1,136 @@
+.hero-image {
+  width: 34rem;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 80rem;
+  margin: auto;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+.content {
+  margin-top: 5rem;
+  color: rgb(232, 232, 232);
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+
+.input-field-number {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.group-input {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.group-input input {
+  padding: 0.5rem 1.5rem;
+  width: 80%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(220, 220, 220, 0.71) 0%,
+    #ffffff 100%
+  );
+  border: 1px solid #9e3af4;
+}
+.group-input input:focus {
+  outline: none;
+}
+
+.input-field-number h3 {
+  color: rgb(217, 161, 38);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.group-input .btn {
+  padding: 0.5rem;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(158, 58, 244, 0.71) 0%,
+    #542c7e 100%
+  );
+  border: 1px solid #9e3af4;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.group-input .btn:hover {
+  filter: brightness(90%);
+}
+
+@media (max-width: 1150px) {
+  .group-input input {
+    width: auto;
+  }
+  main {
+    max-width: 60rem;
+    font-size: 1rem;
+  }
+  .content {
+    line-height: 40px;
+  }
+  .hero-image {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-image {
+    width: 25rem;
+  }
+  .content {
+    letter-spacing: 0px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 875px) {
+  main {
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .input-field-number {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .hero-image {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .group-input input {
+    width: fit-content;
+  }
+  .group-input input,
+  .group-input .btn {
+    padding: 0.3rem;
+  }
+  main {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .group-input {
+    width: auto;
+  }
+}
